@@ -42,7 +42,7 @@ export interface ICommand {
   subscriberOnly?: boolean;
   broadcasterOnly?: boolean;
   callback<T>(opts: {
-    channel: T;
+    channel: string;
     tags: Userstate;
     message: string;
     args: string[];
