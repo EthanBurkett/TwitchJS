@@ -56,6 +56,10 @@ export default class TwitchJS extends tmi.client {
     return this;
   }
 
+  public get prefix() {
+    return this._prefix;
+  }
+
   private async LoadCommands() {
     (
       await PG(
