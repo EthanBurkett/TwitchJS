@@ -3,6 +3,7 @@ import { Client, Options, Userstate } from "tmi.js";
 export default class TwitchJS extends Client {
   constructor(opts: IOptions, disableMessage?: boolean);
   public setDefaultPrefix(prefix: string): TwitchJS;
+  public get prefix(): string;
 }
 
 export interface IOptions extends Options {
