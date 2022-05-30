@@ -4,12 +4,12 @@ An extension based off tmi.js that adds a command handler and permission node.
 
 ## Usage
 
-`yarn add tmi-handler` or `npm i tmi-handler`
+`yarn add twitch-handler` or `npm i twitch-handler`
 
 ## Initializing the client with tmi.js and the custom integration
 
 ```js
-const TwitchJS = require("tmi-handler");
+const TwitchJS = require("twitch-handler");
 
 new TwitchJS({
   commandsDir: "commands",
@@ -47,7 +47,7 @@ new TwitchJS({
 ## With TypeScript
 
 ```js
-import TwitchJS from "tmi-handler";
+import TwitchJS from "twitch-handler";
 
 new TwitchJS({
   commandsDir: "commands",
@@ -107,7 +107,7 @@ module.exports = {
 `commands/ping.ts`
 
 ```js
-import { ICommand } from "tmi-handler";
+import { ICommand } from "twitch-handler";
 
 export default {
   name: "ping",
